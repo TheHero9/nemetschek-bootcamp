@@ -1,0 +1,4 @@
+Description: Get the time for all of the orders if we have a single drone.
+
+Completed task running: 
+https://codesandbox.io/s/task-a-7ucgpu?file=/src/index.js

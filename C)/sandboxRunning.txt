@@ -1,0 +1,7 @@
+Description: Added converter for the kW to W .
+------------------WORK IN PROGRESS---------------------------
+
+
+Task running: 
+https://codesandbox.io/s/task-c-s3bkej?file=/src/index.js
+

@@ -1,0 +1,5 @@
+Description: Added the option to make a new order with different products. The order will be outputed
+when confirmed.
+
+Completed task running:
+https://codesandbox.io/s/task-e-r3pyc8?file=/index.html

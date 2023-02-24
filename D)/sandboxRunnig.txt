@@ -1,0 +1,7 @@
+Description: Output the order in an scending order, based on time to deliver.
+Added information about the products, client ID and delivery time
+
+
+Task running: 
+https://codesandbox.io/s/task-d-hstrs3?file=/src/index.js
+
