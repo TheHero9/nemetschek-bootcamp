@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app">
+      <h3>Please make your order:</h3>
+      <h6>*Only works if you have an account*</h6>
+      <form id="order-form">
+        <label for="type">Type:</label>
+
+        <select id="product-select" required>
+          <option value="">Select a product</option>
+          <option value="cheese">cheese</option>
+          <option value="tomato">tomato</option>
+          <option value="apple">apple</option>
+          <option value="milk">milk</option>
+          <option value="ham">ham</option>
+          <option value="eggs">eggs</option>
+          <option value="banana">banana</option>
+          <option value="carrots">carrots</option>
+          <option value="bread">bread</option>
+          <option value="onion">onion</option>
+        </select>
+
+        <!-- <input type="text" id="type" name="type" /> <br /> -->
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity-select" name="quantity" required />
+
+        <br />
+        <br />
+
+        <p id="orderTotal">You ordered:</p>
+
+        <button type="submit">Add</button>
+      </form>
+
+      <br />
+
+      <h3>Please confirm your order</h3>
+
+      <form id="submit-form">
+        <label for="customerId">Customer ID:</label>
+        <input type="number" id="customerId" name="customerId" required />
+        <button type="submit">Send Order</button>
+      </form>
+    </div>
+
+    <script src="client.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,10 @@
+Added server and client.
+
+Steps to run it: 
+**cd G)**
+1. Live server the html file
+2. noder server.js
+
+
+Info: 
+You can make an order and add it to the orders array and check it in the browser
