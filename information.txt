@@ -1,0 +1,12 @@
+Added server and client.
+
+Steps to run it: 
+**cd G)**
+1. Live server the html file
+2. node server.js
+
+
+Info: 
+You can make an order and add it to the orders array and check it in the browser.
+Then the order is passed to the server and its being Addedto a json file 
+(1 order atm could be saved).

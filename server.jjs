@@ -1,0 +1,74 @@
+const WebSocket = require('ws');
+const fs = require('fs');
+
+const server = new WebSocket.Server({ port: 3000 });
+
+console.log('WebSocket server started');
+
+
+
+// server.on('connection', (socket) => {
+//   console.log('Client connected');
+
+
+//   // Transfer orders
+//   socket.on('message', (message) => {
+
+
+//     // Echo the order back to the client
+//     console.log(message)
+//   });
+
+//   socket.on('close', () => {
+//     console.log('Client disconnected');
+//   });
+// });
+
+
+// Deleting old orders 2
+// server.on('connection', function connection(ws) {
+//   // Take the order
+//   ws.on('message', function incoming(data) {
+//     // Transform it
+//     const jsonData = JSON.parse(data);
+//     const myArray = jsonData.array;
+
+//     // Store the array in a JSON file
+//     fs.writeFile('myArray.json', JSON.stringify(myArray), function(err) {
+//       if (err) throw err;
+//       console.log('Array saved to file!');
+//     });
+//   });
+// });
+
+
+
+// Read the existing orders from the file
+let orders = [];
+
+server.on('connection', function connection(ws) {
+
+  
+  ws.on('message', function incoming(data) {
+
+  // PROBLEM SERVER RELOADING
+  try{
+    const jsonData = JSON.parse(data);
+    const newOrder = jsonData.array;
+
+    // Add the new order to the array of orders
+    orders.push(newOrder);
+
+    // Write the updated array of orders back to the file
+      fs.writeFile('orders.json', JSON.stringify(orders), function(err) {
+    console.log('Order saved to file!');
+      // if (err) throw err;
+    });
+
+  } catch(err){
+    console.log('Error processing order:', err)
+  }
+
+
+  });
+});

@@ -1,6 +1,6 @@
 Description: Added a maximum number of drone we can use (1 per order) and the
 total time for the orders. The code is exactly the same as A), but here we have the most
-optimal time for the orders to be completed
+optimal time for the orders to be completed.
 
 Completed task running: 
 https://codesandbox.io/s/task-b-zcd9e7

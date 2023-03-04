@@ -1,5 +1,9 @@
 # 📝 Rise Bootcamp by Nemetschek Bulgaria Homeworks
 
+## 📧 Contact Me:
+####  dimitrios.v.2002@gmail.com
+####  <a href="https://www.linkedin.com/in/demetrios-vlassis/">LinkedIn</a>
+
 <br> <br>
 
 ## ℹ️ Information
@@ -23,6 +27,7 @@
 ### G) 🟡
 ### H) 🔴
 ### I) 🔴
+### J) 🔴
 
 <br>
 
